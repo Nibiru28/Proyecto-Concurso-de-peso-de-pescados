@@ -1,0 +1,9 @@
+(1) Participante llena formulario
+        ↓
+(2) Datos se guardan en "Respuestas" (Sheets)
+        ↓
+(3) Fórmula calcula el Top 3 automáticamente
+        ↓
+(4) Presentador revisa el Top 3 en Sheets
+        ↓
+(5) Actualiza el podio en Minecraft manualmente
