@@ -114,7 +114,7 @@ Actualiza manualmente estos datos en los letreros del podio de Minecraft.
 
 🖼 Capturas de Pantalla
 
-
+Mundo virtual1.png
 
 🧾 Créditos / Referencias
 
