@@ -1,0 +1,13 @@
+# Implementación No-Code del Sistema
+
+Este proyecto no contiene código fuente tradicional debido a que fue desarrollado utilizando un enfoque **no-code**, basado completamente en Google Forms y Google Sheets para capturar y procesar datos.
+
+## ¿Por qué no hay código?
+
+El sistema utiliza:
+
+- **Google Forms** para la captura de datos (ID, nombre y peso del pez).
+- **Google Sheets** para almacenar y procesar automáticamente la información.
+- Una fórmula QUERY para obtener el Top 3:
+
+  =QUERY(Respuestas!A:C, "SELECT * WHERE C IS NOT NULL ORDER BY C DESC LIMIT 3", 1)
