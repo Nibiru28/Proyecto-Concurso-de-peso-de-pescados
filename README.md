@@ -65,9 +65,6 @@ Insertar la fórmula:
 **Ordenamiento completo:**
 =SORT(A2:C, C2:C, FALSE)
 
-css
-Copy code
-
 **Top 3:**
 =ARRAY_CONSTRAIN(SORT(A2:C, C2:C, FALSE), 3, 3)
 
