@@ -1,0 +1,152 @@
+ Introducción
+
+Este documento describe el desarrollo del Sistema de Registro de Pesos para un concurso de pesca, como parte del Proyecto NEXO del programa ITIID.
+
+El proyecto utiliza herramientas no-code (Google Forms y Google Sheets) para registrar participantes, procesar datos y generar un ranking automático de los tres mejores pescadores según el peso del pez más grande capturado.  
+
+Además, incluye una representación visual en Minecraft mediante un cuarto de cuarzo con un podio para mostrar el Top 3.
+
+Descripción General
+
+El sistema permite:
+
+- Registrar participantes mediante un formulario.
+- Almacenar y procesar datos automáticamente.
+- Identificar el Top 3 por peso usando una consulta en Sheets.
+- Visualizar manualmente los resultados en un mundo virtual (Minecraft).
+
+El diseño prioriza simplicidad, rapidez de implementación y claridad en la documentación.
+
+Objetivos
+
+## Objetivo General
+Desarrollar un sistema no-code para registrar y visualizar resultados de un concurso de pesca.
+
+## Objetivos Específicos
+- Implementar un formulario funcional.
+- Procesar datos automáticamente en Google Sheets.
+- Generar un ranking dinámico del Top 3.
+- Crear una representación visual en Minecraft.
+- Documentar el proceso con claridad profesional.
+
+Requerimientos del Sistema
+
+## Requerimientos Funcionales
+- RF1: Registrar ID, nombre y peso de participante.
+- RF2: Guardar automáticamente datos en Google Sheets.
+- RF3: Calcular el Top 3 en una hoja separada.
+- RF4: Permitir visualizar los resultados.
+
+## Requerimientos No Funcionales
+- RNF1: Sistema no dependiente de programación.
+- RNF2: Fácil de usar y accesible desde cualquier dispositivo.
+- RNF3: Datos almacenados en la nube.
+
+Arquitectura General del Sistema
+
+El sistema se compone de tres capas:
+
+1. **Captura (Google Forms)**
+   - Recibe entradas de ID, nombre y peso.
+
+2. **Procesamiento (Google Sheets)**
+   - Organización de datos.
+   - Cálculo automático del Top 3.
+
+3. **Visualización (Minecraft)**
+   - Cuarto de cuarzo.
+   - Podio de diamante, esmeralda y oro.
+   - Letreros con datos del Top 3.
+
+ Diseño del Sistema
+
+## 8.1 Google Forms
+Campos:
+- ID del participante
+- Nombre completo
+- Peso del pez más grande (kg)
+
+## 8.2 Google Sheets
+- Hoja "Respuestas": captura los datos.
+- Hoja "Top3": contiene la fórmula:
+
+=ARRAY_CONSTRAIN(ORDENAR(Respuestas!B2:D, 3, FALSO), 3, 3)
+
+
+8.3 Flujo general
+
+Forms → Sheets → Top 3 → Minecraft
+
+# 9. Mundo Virtual (Minecraft)
+
+La integración consiste en un cuarto techado construido totalmente de bloque de cuarzo, iluminado con antorchas superiores e inferiores para visibilidad nocturna.
+
+En el centro se ubica un podio con:
+- Diamante (1er lugar)
+- Esmeralda (2do lugar)
+- Oro (3er lugar)
+
+Cada bloque incluye un letrero actualizable con:
+- Lugar
+- Nombre del participante
+- Peso registrado
+
+Este espacio representa visualmente los resultados del sistema no-code.
+
+# 10. Manual de Usuario
+
+### 1. Llenar el formulario
+Ingresar ID, nombre y peso.
+
+### 2. Consultar el Top 3
+Abrir la hoja "Top3" en Google Sheets.
+
+### 3. Actualizar el podio
+En Minecraft:
+- Colocar los bloques en orden (diamante, esmeralda, oro).
+- Actualizar los letreros.
+
+# 11. Bitácora de Desarrollo
+
+## Semana 1
+- Idea original más compleja basada en desarrollo web.
+- Se evaluó un sistema programado, pero no avanzó por carga académica.
+
+## Semana 2
+- Se decidió pivotar a solución no-code.
+- Se creó Forms, Sheets y fórmula de Top 3.
+
+## Semana 3
+- Se construyó el cuarto en Minecraft.
+- Se completó documentación y mini-artículo.
+
+# 12. Resultados
+
+- El sistema funciona correctamente registrando datos.
+- El Top 3 se genera automáticamente.
+- Minecraft presenta los resultados visualmente.
+- La solución cumple con requisitos básicos y su propósito.
+
+# 13. Discusión y Limitaciones
+
+- La versión inicial del proyecto fue reemplazada debido a carga académica y falta de tiempo.
+- Se decidió por una solución no-code para garantizar un producto funcional a tiempo.
+- Limitación: El podio debe actualizarse manualmente.
+- Aun así, el sistema cumple con los objetivos planteados.
+
+# 14. Conclusiones
+
+- La solución no-code permitió un desarrollo rápido y funcional.
+- Google Forms + Sheets demostraron ser herramientas eficientes.
+- Minecraft aporta una visualización creativa y clara.
+- Se logró terminar un proyecto completo en tiempo reducido.
+
+# 15. Referencias
+
+- Google Forms Documentation
+- Google Sheets QUERY Function
+- Minecraft Wiki
+- Proyecto NEXO – Guía oficial UPSRJ
+
+
+
